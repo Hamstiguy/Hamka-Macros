@@ -66,7 +66,7 @@ Requirements: Windows 10 or 11 (64-bit). Windows may show a SmartScreen note bec
 
 ## AI macro agent: set it up
 
-Open the side panel with the **AI** button. Which AI answers is chosen in **Settings → AI for the macro agent**. The chat, the tools and the macro cards are the same for all three. Pick one:
+Open the side panel with the **AI** button. Which AI answers is chosen in **Settings → AI for the macro agent**. The chat, the tools and the macro cards are the same for all of them. Pick one:
 
 ![AI settings](docs/img/settings-ai.png)
 
@@ -104,6 +104,18 @@ Uses your DeepSeek account in a built-in browser (Microsoft Edge WebView2). No A
 3. After the sign-in the page disappears and you chat in the app. The app sends at most one message every 8 seconds, so DeepSeek is not flooded. Under load you may see "server busy".
 
 If DeepSeek does not load, install the Microsoft Edge **WebView2 runtime**.
+
+### Option D – Your own AI (local or any API)
+
+Use a model on your own PC or any hosted API. Nothing is sent anywhere except to the address you enter.
+
+1. In **Settings → AI for the macro agent** choose **Own AI (local or API)**.
+2. Pick the **API type** your server speaks: **OpenAI Chat Completions** (Ollama, LM Studio, llama.cpp, vLLM, OpenRouter and most others), **OpenAI Responses**, or **Anthropic Messages**.
+3. Enter the **server address**, for example `http://localhost:11434` (Ollama), `http://localhost:1234` (LM Studio), `https://api.openai.com` or `https://api.anthropic.com`. An address without a path gets `/v1` added.
+4. Enter the **API key** if the server needs one. Local servers usually don't. The key is stored encrypted on this PC.
+5. Click **Fetch models**, pick one (type in the box to filter, or enter any name) and press **Test**.
+
+Plain `http://` is only accepted for your own PC and your home network. Servers on the internet must use `https://`.
 
 ### Using the agent
 

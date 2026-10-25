@@ -107,6 +107,18 @@ Nutzt dein DeepSeek-Konto in einem eingebauten Browser (Microsoft Edge WebView2)
 
 Lädt DeepSeek nicht, installiere die **WebView2-Runtime** von Microsoft Edge.
 
+### Variante D – Deine eigene KI (lokal oder jede API)
+
+Nutze ein Modell auf deinem eigenen PC oder eine beliebige API. Es geht nichts woandershin als an die Adresse, die du einträgst.
+
+1. In **Einstellungen → KI für den Makro-Agenten** **Eigene KI (lokal oder API)** wählen.
+2. Die **API-Art** wählen, die dein Server spricht: **OpenAI Chat Completions** (Ollama, LM Studio, llama.cpp, vLLM, OpenRouter und die meisten anderen), **OpenAI Responses** oder **Anthropic Messages**.
+3. Die **Serveradresse** eintragen, zum Beispiel `http://localhost:11434` (Ollama), `http://localhost:1234` (LM Studio), `https://api.openai.com` oder `https://api.anthropic.com`. Bei einer Adresse ohne Pfad wird `/v1` ergänzt.
+4. Den **API-Schlüssel** eintragen, falls der Server einen braucht. Lokale Server brauchen meist keinen. Der Schlüssel wird verschlüsselt auf diesem PC gespeichert.
+5. **Modelle laden** klicken, eins auswählen (im Feld tippen zum Filtern oder einen beliebigen Namen eintragen) und **Testen** drücken.
+
+Einfaches `http://` ist nur für deinen eigenen PC und dein Heimnetz erlaubt. Server im Internet müssen `https://` nutzen.
+
 ### Den Agenten benutzen
 
 - Schreibe, was du willst: *„Klicke, solange ich Maus 5 halte, etwa 12 Klicks pro Sekunde, mit etwas Zufall.“*
